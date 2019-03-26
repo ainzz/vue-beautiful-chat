@@ -42,10 +42,10 @@ export default {
 </script>
 <style scoped>
 .sc-header {
-  min-height: 75px;
+  min-height: 50px;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-  padding: 10px;
+  padding: 0 10px;
   box-shadow: 0 1px 4px rgba(0,0,0,.2);
   position: relative;
   box-sizing: border-box;

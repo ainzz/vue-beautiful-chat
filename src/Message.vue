@@ -119,6 +119,7 @@ export default {
   margin-bottom: 0px;
   color: white;
   text-align: center;
+  margin-top: 0;
 }
 
 @media (max-width: 450px) {
@@ -136,6 +137,13 @@ export default {
   white-space: pre-wrap;
   -webkit-font-smoothing: subpixel-antialiased
 }
+
+.sc-message--text p:not(.sc-message--meta) {
+	margin: 0;
+	margin-top: 10px;
+}
+
+
 .sc-message--content.sent .sc-message--text {
   color: white;
   background-color: #4e8cff;

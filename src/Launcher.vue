@@ -141,9 +141,9 @@ export default {
       }
 
       if (this.participants.length > 1) {
-        return 'You, ' + this.participants[0].name + ' & others'
+        return 'Tu, ' + this.participants[0].name + ' si altii'
       } else {
-        return 'You & ' + this.participants[0].name
+        return 'Tu si ' + this.participants[0].name
       }
     }
   },
