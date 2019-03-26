@@ -157,7 +157,7 @@ export default {
 }
 
 .sc-user-input--text {
-  width: 300px;
+  width: 285px;
   resize: none;
   border: none;
   outline: none;

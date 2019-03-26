@@ -119,7 +119,7 @@ export default {
   margin-bottom: 0px;
   color: white;
   text-align: center;
-  margin-top: 0;
+  margin: 5px 0;
 }
 
 @media (max-width: 450px) {
@@ -129,11 +129,11 @@ export default {
 }
 
 .sc-message--text {
-  padding: 5px 20px;
+  padding: 0 20px;
   border-radius: 6px;
   font-weight: 300;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1;
   white-space: pre-wrap;
   -webkit-font-smoothing: subpixel-antialiased
 }

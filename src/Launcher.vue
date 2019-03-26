@@ -159,12 +159,13 @@ export default {
   background-position: center;
   background-repeat: no-repeat;
   position: fixed;
-  right: 25px;
+  right: 80px;
   bottom: 25px;
   border-radius: 50%;
   box-shadow: none;
   transition: box-shadow 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 99999;
 }
 
 .sc-launcher:before {
@@ -182,7 +183,7 @@ export default {
   width: 60px;
   height: 60px;
   position: fixed;
-  right: 25px;
+  right: 80px;
   bottom: 25px;
   transition: opacity 100ms ease-in-out, transform 100ms ease-in-out;
 }

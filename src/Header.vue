@@ -56,6 +56,8 @@ export default {
   border-radius: 50%;
   align-self: center;
   padding: 10px;
+  width: 50px;
+  height: auto;
 }
 
 .sc-header--title {

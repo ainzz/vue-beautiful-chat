@@ -141,6 +141,7 @@ export default {
   transition: 0.3s ease-in-out;
   border-radius: 10px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  z-index: 999;
 }
 
 .sc-chat-window.closed {
