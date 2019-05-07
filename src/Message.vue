@@ -118,7 +118,7 @@
 	}
 
 	.sc-message--meta {
-		font-size: xx-small;
+		font-size: 0.75em;
 		margin-bottom: 0px;
 		color: white;
 		text-align: center;
@@ -288,5 +288,24 @@
 				border-color: $color;
 			}
 		}
+	}
+
+	.sc-message--meta {
+		position: absolute;
+		bottom: 8px;
+		right: 8px;
+		white-space: normal;
+		margin: 0;
+	}
+
+	p.sc-message--actual-message:after {
+		content: '';
+		display: inline;
+		margin-right: 50px;
+	}
+
+	.sc-message--content.sent .sc-message--text {
+		position: relative;
+
 	}
 </style>
