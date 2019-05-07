@@ -308,4 +308,32 @@
 		position: relative;
 
 	}
+
+	.sc-message--pending {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+	}
+
+	.sc-message--pending:after {
+		content: " ";
+		display: block;
+		width: 10px;
+		height: 10px;
+		margin: 0px;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		border-color: #fff transparent #fff transparent;
+		animation: sc-message-pending 1.2s linear infinite;
+	}
+
+	@keyframes sc-message-pending {
+		0% {
+			transform: rotate(0deg);
+		}
+
+		100% {
+			transform: rotate(360deg);
+		}
+	}
 </style>

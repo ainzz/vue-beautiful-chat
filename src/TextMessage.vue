@@ -5,6 +5,7 @@
 			<span v-if="data.meta.timestamp != null" class="timestamp-meta">
 				{{data.meta.timestamp}}
 			</span>
+			<span v-else class="sc-message--pending"></span>
 		</p>
 	</div>
 </template>
@@ -29,6 +30,8 @@
 				required: true
 			}
 		},
+		methods: {
+		},
 		computed: {
 			messageText() {
 				const escaped = escapeGoat.escape(this.data.text)
@@ -40,7 +43,7 @@
 						location: 'smart'
 					}
 				})
-			}
+			},
 		}
 	}
 </script>
@@ -49,4 +52,5 @@
 	a.chatLink {
 		color: inherit !important;
 	}
+	
 </style>

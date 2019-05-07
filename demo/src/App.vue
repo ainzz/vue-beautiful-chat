@@ -72,7 +72,7 @@
 						data: {
 							text,
 							meta: {
-								timestamp: '12:30',
+								timestamp: Math.round(+new Date() / 1000),
 								seen: true
 							}
 						}
@@ -86,7 +86,6 @@
 				message.data = {
 					...message.data,
 					meta: {
-						timestamp: '12:20',
 						seen: true
 					}
 				}
