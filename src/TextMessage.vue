@@ -2,7 +2,7 @@
 	<div class="sc-message--text" :style="messageColors">
 		<p v-html="messageText" class="sc-message--actual-message"></p>
 		<p class='sc-message--meta' :style="{color: messageColors.color}">
-			<span v-if="data.meta.timestamp != null" class="timestamp-meta">
+			<span v-if="data.meta != null && data.meta.timestamp != null" class="timestamp-meta">
 				{{data.meta.timestamp}}
 			</span>
 			<span v-else class="sc-message--pending"></span>
