@@ -107,7 +107,7 @@ export default {
           this.onSubmit({
             author: 'me',
             type: 'file',
-            data: { text, file }
+            data: { text, file, meta: {timestamp: null} }
           })
           this.file = null
           this.$refs.userInput.innerHTML = ''
@@ -115,7 +115,7 @@ export default {
           this.onSubmit({
             author: 'me',
             type: 'file',
-            data: { file }
+            data: { file, meta: {timestamp: null} }
           })
           this.file = null
         }
@@ -124,7 +124,7 @@ export default {
           this.onSubmit({
             author: 'me',
             type: 'text',
-            data: { text }
+            data: { text, meta: {timestamp: null} }
           })
           this.$refs.userInput.innerHTML = ''
         }
