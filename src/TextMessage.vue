@@ -1,7 +1,7 @@
 <template>
 	<div class="sc-message--text" :style="messageColors">
 		<p v-html="messageText" class="sc-message--actual-message"></p>
-		<p v-if="data.meta" class='sc-message--meta' :style="{color: messageColors.color}">
+		<p class='sc-message--meta' :style="{color: messageColors.color}">
 			<span v-if="data.meta.timestamp != null" class="timestamp-meta">
 				{{data.meta.timestamp}}
 			</span>
