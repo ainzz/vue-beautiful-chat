@@ -2,6 +2,7 @@
   <div class="sc-message-list" ref="scrollList" :style="{backgroundColor: colors.messageList.bg}">
     <Message v-for="(message, idx) in messages" :message="message" :chatImageUrl="chatImageUrl(message.author)" :authorName="authorName(message.author)" :key="idx" :colors="colors" :messageStyling="messageStyling" />
     <Message v-show="showTypingIndicator !== ''" :message="{author: showTypingIndicator, type: 'typing'}" :chatImageUrl="chatImageUrl(showTypingIndicator)" :colors="colors" :messageStyling="messageStyling" />
+	<Message v-if="messages.length < 1" message="Nu exista conversatii. Poti incepe una chiar acum!" type="system" authorName="me" />
   </div>
 </template>
 <script>
@@ -61,7 +62,10 @@ export default {
   computed: {
     defaultChatIcon() {
       return chatIcon
-    }
+	},
+	orderedMessages() {
+		
+	}
   },
   mounted () {
     this._scrollDown()
