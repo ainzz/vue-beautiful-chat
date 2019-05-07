@@ -100,7 +100,8 @@ export default {
     },
     _submitText (event) {
       const text = this.$refs.userInput.textContent
-      const file = this.file
+	  const file = this.file
+	  
       if (file) {
         if (text && text.length > 0) {
           this.onSubmit({
